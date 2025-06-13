@@ -1,0 +1,76 @@
+:root {
+  --verde-color: #b6bb18ff;
+  --cafe-color: #773611ff;
+  --hover-color: rgba(121, 58, 21, 0.863);
+  --texto-color: #333;
+  --fondo-claro: #f8f8f8;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-image: url("fondo.svg"); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Logo {
+  
+  position: relative; /* importante para usar posicionamiento absoluto dentro */
+  width: 800%;
+  height: 800; /* ajusta según necesidad */
+  position :absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px; /* tamaño pequeño como logo */
+  height: auto;
+  border-radius: 10px; /* opcional para esquinas redondeadas */
+
+
+}
+
+
+h1 {
+  text-align: center;
+  color: var(--cafe-color);
+  margin-bottom: 40px;
+}
+
+.grafica {
+  margin: 30px 0;
+  background: rgb(133, 100, 80);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  border-left: 5px solid var(--verde-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.grafica:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.grafica h2 {
+  text-align: center;
+  color: var(--cafe-color);
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: 2px solid var(--verde-color);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  border-color: var(--hover-color);
+}
